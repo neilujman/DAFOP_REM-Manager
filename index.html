@@ -2,10 +2,35 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<style type="text/css">
+			h1
+			{
+			font-size: 32px;
+			line-height: 150px;
+			text-shadow: -1px -1px #fb6, 1px 1px #d60, -3px 0 4px #000;
+			font-family:"Segoe print", Arial, Helvetica, sans-serif;
+			color: #FF9933;
+			padding:32px;
+			font-weight:lighter;
+			-moz-box-shadow: 2px 2px 6px #888;
+			-webkit-box-shadow: 2px 2px 6px #888;
+			box-shadow:2px 2px 6px #888;
+			text-align:center;
+			display:inline;
+			}
+		</style>
 	</head>
-	
+
 	<body>
-		<h1>Bienvenue au REM manager</h1>
+		<h1 style="background-image:url(images/banknote-dollar.jpg)">Bienvenue au REM manager</h1>
+
+		<form action="/rem_manager/edition_REM.php" method="post">
+			<p>Initiales du gestionnaire: <input type="text" name="initiales" /></p>
+			<p>Nom de l'intervenant: <input type="text" name="nom" /></p>
+			<p>Prénom de l'intervenant: <input type="text" name="prenom" /></p>
+			<p><input type="submit" value="Éditer"></p>
+		</form>
+
 		<a href="editerREM.php">Pour éditer REM</a>
 
 </html>
